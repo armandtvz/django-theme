@@ -31,7 +31,7 @@ def set_theme(request):
             theme = Theme.objects.update_or_create(
                 user=user,
                 defaults={
-                    'theme': mode,
+                    'mode': mode,
                     'user': user,
                 }
             )
