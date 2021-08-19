@@ -18,5 +18,8 @@ class Theme(models.Model):
         on_delete=models.CASCADE,
     )
 
+    class Meta:
+        default_permissions = []
+
     def __str__(self):
         return self.mode
