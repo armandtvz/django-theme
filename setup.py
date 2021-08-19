@@ -9,7 +9,7 @@ description = (
 
 setuptools.setup(
     name='django-theme',
-    version='0.1.1',
+    version='0.2',
     author='Armandt van Zyl',
     author_email='armandtvz@gmail.com',
     description=description,
