@@ -4,12 +4,12 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 description = (
-    'Allow a user to set a theme preference'
+    'Allow a Django user to set a theme preference.'
 )
 
 setuptools.setup(
     name='django-theme',
-    version='0.2',
+    version='0.3',
     author='Armandt van Zyl',
     author_email='armandtvz@gmail.com',
     description=description,
@@ -17,7 +17,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/armandtvz/django-theme',
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(exclude=['test_proj', 'test_project']),
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
@@ -33,6 +33,6 @@ setuptools.setup(
     ],
     python_requires='>=3.8',
     install_requires=[
-        'Django >=3.0',
+        'Django>=3.0',
     ],
 )
